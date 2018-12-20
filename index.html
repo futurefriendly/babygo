@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title>冠军宝贝</title>
+
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/touch.png" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/jquery.mobile-1.2.0.min.js"></script>
+<script>
+$(function(){
+	$('.check a').tap(function(){
+		$(this).toggleClass('checked');
+	});
+})
+</script>
+</head>
+
+<body ontouchstart="">
+
+<div data-role="page" data-tab-toggle="false" data-title="冠军宝贝" id="page_index" class="page page_index">
+	<div data-role="header" class="header">
+		<h1>首页</h1>
+	</div>
+	<div data-role="content" class="content">
+		<div class="conbg">
+			<a href="#page_achieve" data-transition="none" class="achieve_entrance"></a>
+			<div class="check">
+				<a href="javascript:;" class="checked"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+			</div>
+			<a href="#page_result" data-transition="none" class="submit"></a>
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer">
+		<div class="nav_foot clear">
+			<a href="#page_index" class="nav1 select" data-transition="none"><em></em>首页</a>
+			<a href="#page_task" class="nav2" data-transition="none"><em></em>任务</a>
+			<a href="#page_achieve" class="nav3" data-transition="none"><em></em>成就</a>
+			<a href="javascript:;" class="nav4" data-transition="none"><em></em>设置</a>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" data-tab-toggle="false" data-title="结果" id="page_result" class="page page_result">
+	<div data-role="header" class="header">
+		<h1>结果页</h1>
+	</div>
+	<div data-role="content" class="content">
+		<div class="conbg">
+			<a class="compare" href="#page_compare" data-transition="none"></a>
+			<a href="#page_task" data-transition="none" class="submit"></a>
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer">
+		<div class="nav_foot clear">
+			<a href="#page_index" class="nav1 select" data-transition="none"><em></em>首页</a>
+			<a href="#page_task" class="nav2" data-transition="none"><em></em>任务</a>
+			<a href="#page_achieve" class="nav3" data-transition="none"><em></em>成就</a>
+			<a href="javascript:;" class="nav4" data-transition="none"><em></em>设置</a>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" data-tab-toggle="false" data-title="榜单" id="page_compare" class="page page_compare">
+	<div data-role="header" class="header">
+		<h1>榜单页</h1>
+	</div>
+	<div data-role="content" class="content">
+		<div class="conbg"></div>
+	</div>
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer">
+		<div class="nav_foot clear">
+			<a href="#page_index" class="nav1 select" data-transition="none"><em></em>首页</a>
+			<a href="#page_task" class="nav2" data-transition="none"><em></em>任务</a>
+			<a href="#page_achieve" class="nav3" data-transition="none"><em></em>成就</a>
+			<a href="javascript:;" class="nav4" data-transition="none"><em></em>设置</a>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" data-tab-toggle="false" data-title="任务" id="page_task" class="page page_task">
+	<div data-role="header" class="header">
+		<h1>任务页</h1>
+	</div>
+	<div data-role="content" class="content">
+		<div class="conbg"></div>
+	</div>
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer">
+		<div class="nav_foot clear">
+			<a href="#page_index" class="nav1" data-transition="none"><em></em>首页</a>
+			<a href="#page_task" class="nav2 select" data-transition="none"><em></em>任务</a>
+			<a href="#page_achieve" class="nav3" data-transition="none"><em></em>成就</a>
+			<a href="javascript:;" class="nav4" data-transition="none"><em></em>设置</a>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" data-tab-toggle="false" data-title="成就" id="page_achieve" class="page page_achieve">
+	<div data-role="header" class="header">
+		<h1>成就页</h1>
+	</div>
+	<div data-role="content" class="content">
+		<div class="conbg"></div>
+	</div>
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="footer">
+		<div class="nav_foot clear">
+			<a href="#page_index" class="nav1" data-transition="none"><em></em>首页</a>
+			<a href="#page_task" class="nav2" data-transition="none"><em></em>任务</a>
+			<a href="#page_achieve" class="nav3 select" data-transition="none"><em></em>成就</a>
+			<a href="javascript:;" class="nav4" data-transition="none"><em></em>设置</a>
+		</div>
+	</div>
+</div>
+
+<div class="preload" style="position:absolute; height:0; width:0; overflow:hidden;">
+	<img src="images/check.png" />
+	<img src="images/page_task.png" />
+	<img src="images/page_achieve.png" />
+	<img src="images/page_compare.png" />
+	<img src="images/page_result.png" />
+</div>
+
+</body>
+</html>

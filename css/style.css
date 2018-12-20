@@ -1,0 +1,178 @@
+/* CSS GUIDE
+================================================================
+ *
+ * PROJECT:	babygo;
+ *
+----------------------------------------------------------------
+ *
+ * 1. CSS RESET;
+ * 2. 全局公用CSS;
+ * 3. 模块;
+ * 4. 结构
+ *
+================================================================*/
+
+
+
+
+
+/* 1 CSS RESET
+================================================================*/
+
+html{}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td,header,footer,nav,article{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+img{border:0; max-width:100%; vertical-align:top}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+body{ font:16px/1.5 Helvetica,Arial,STHeiti,Droid Sans Fallback,sans-serif; -webkit-user-select:none; -webkit-backface-visibility:hidden;-webkit-overflow-scrolling: touch;}
+input,textarea,select,button{ outline: none; resize:none; font:16px/1.5 Helvetica,Arial,STHeiti,Droid Sans Fallback,sans-serif;}
+select{font-size:16px}
+button{line-height:1.5;white-space:nowrap;vertical-align:middle;cursor:pointer}
+strong{font-weight:800}
+a{ text-decoration: none; outline: none; cursor: pointer;}
+a:link{ -webkit-tap-highlight-color:transparent;}
+a:hover{ text-decoration: none;}
+a:active .ico30{ box-shadow:rgba(0,0,0,.2) 0 0 0 15px; background-color:rgba(0,0,0,.2); border-radius:8px}
+.ui-page{-webkit-backface-visibility:hidden;}
+.ui-body-c, .ui-overlay-c{ background:none; box-shadow:none; border:none;}
+
+
+
+
+/* 2 全局公用CSS
+================================================================*/
+
+/* 布局
+----------------------------------------------------------------*/
+
+/* 浮动 */
+.clear:after{content:'.';clear:both;display:block;height:0;visibility:hidden;line-height:0}
+
+.left{ float:left}
+.right{ float:right}
+
+/* DISPLAY */
+.dis_b{ display:block}
+.dis_in{ display:inline}
+.dis_inb{ display:inline-block}
+.vis_on{ visibility: visible;}
+.vis_off{ visibility: hidden;}
+
+/* 文字
+----------------------------------------------------------------*/
+
+/* 字号 */
+.tx_-2{ font-size:.75em}
+.tx_-1{ font-size:.875em}
+.tx_0{ font-size:1em}
+.tx_1{ font-size:1.125em}
+.tx_2{ font-size:1.25em}
+
+/* 字重 */
+.tx_b{ font-weight:800}
+.tx_n{ font-weight:normal}
+
+/* 字体样式 */
+.tx_udl{ text-decoration:underline}
+.tx_del{ text-decoration:line-through}
+
+/* 对齐 */
+.tx_l{ text-align:left}
+.tx_c{ text-align:center}
+.tx_r{ text-align:right}
+
+/* 折行 */
+.tx_br{ word-wrap:break-word; word-break:break-all}
+.tx_unbr{ width:100%; overflow: hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+/* 对齐 */
+.vt_t{ vertical-align: top;}
+.vt_m{ vertical-align: middle;}
+.vt_b{ vertical-align: bottom;}
+
+
+
+
+
+/* 3 全局颜色
+================================================================*/
+
+/* color
+----------------------------------------------------------------*/
+
+.c_tx0,body,input,textarea{ color:#595959}/* 默认文字颜色 */
+.c_tx1{ color:#999}/* 弱化文字色 */
+.c_tx2,a,a:hover,a:active,a:visited{ color:#018ec9}/* 默认链接色 */
+.c_tx3{ color:#fff}/* 标白 */
+.c_tx4{ color:#ba5d12}/* 标红 */
+
+/* background
+----------------------------------------------------------------*/
+
+body,
+.bg0{ background-color:#fff}/* body背景色 */
+.bg1{ background-color:#179fdd}/* 顶部导航背景色 */
+.bg2{ background-color:#d6e7ef}/* 底部导航背景色 */
+.bg3{ background-color:#e5eef3}/* 内容区块背景色 */
+.bg4{ background-color:#d6e7ef}/* IM底部背景色 */
+
+/* border
+----------------------------------------------------------------*/
+
+.bor0{}
+
+
+
+
+
+/* 3 模块
+================================================================*/
+
+.page_index .achieve_entrance{ display:block; height:90px}
+.page_index .achieve_entrance:active{ background-color:rgba(0,0,0,.1)}
+
+/* check */
+.page_index .check{ padding-top:43px; margin:0 18px 0 24px;}
+.page_index .check a{ display:block; height:35px; margin-bottom:12px; border-radius:16px}
+.page_index .check a:active{ background-color:rgba(0,0,0,.1);}
+.page_index .check .checked{ background:url(../images/check.png) 235px 50% no-repeat; background-size:30px 30px;}
+.page_index .submit{ height:35px; display:block; margin:57px 18px 0 24px; border-radius:16px}
+.page_index .submit:active{ background-color:rgba(0,0,0,.1);}
+
+.page_result .submit{ position:absolute; left:21px; top:542px; height:40px; display:block; width:277px; border-radius:16px}
+.page_result .submit:active{ background-color:rgba(0,0,0,.1);}
+
+.compare{ position:absolute; left:228px; top:301px; display:block; width:73px; height:184px}
+.compare:active{ background-color:rgba(0,0,0,.1);}
+
+
+
+/* 4 结构
+================================================================*/
+
+.page{}
+
+.content{ width:320px; margin:0 auto;}
+
+.conbg{ position:relative; width:320px; background-repeat:no-repeat; background-position:0 0}
+.page_index .conbg{ height:630px; padding-top:150px; background-image:url(../images/page_index.png); background-size:320px 780px;}
+.page_result .conbg{ height:630px; background-image:url(../images/page_result.png); background-size:320px 630px;}
+.page_compare .conbg{ height:780px; background-image:url(../images/page_compare.png); background-size:320px 780px;}
+.page_task .conbg{ height:548px; background-image:url(../images/page_task.png); background-size:320px 548px;}
+.page_achieve .conbg{ height:548px; background-image:url(../images/page_achieve.png); background-size:320px 548px;}
+
+.header{ width:320px; margin:0 auto; display:none}
+
+.footer{ height:60px; margin:0 auto; background-image:url(../images/footerbg.png); background-repeat:no-repeat; background-size:320px 60px; background-position:center 0;}
+.nav_foot a{ display:block; height:60px; width:25%; float:left; text-align:center; font-size:12px; color:#fff; border-radius:20px}
+.nav_foot a:active{ background-color:rgba(0,0,0,.1);}
+.nav_foot .select{ color:#f13c70}
+.nav_foot a em{ -webkit-transform:scale(.9); display:block; margin:0 auto; width:40px; height:40px; background-image:url(../images/ico_nav.png); background-repeat:no-repeat; background-size:160px 40px;}
+.nav_foot .select em{ -webkit-transform:scale(1);}
+.nav_foot .nav1 em{ background-position:0 0}
+.nav_foot .nav2 em{ background-position:-40px 0}
+.nav_foot .nav3 em{ background-position:-80px 0}
+.nav_foot .nav4 em{ background-position:-120px 0;}
